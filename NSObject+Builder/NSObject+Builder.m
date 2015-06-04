@@ -10,10 +10,9 @@
 
 @implementation NSObject (Builder)
 
-+ (instancetype)createWithClass:(Class)selfClass
-                        builder:(void(^)(NSObject *builder))block {
++ (instancetype)createWithBuilder:(void(^)(NSObject *builder))block {
     
-    id objc = [[selfClass alloc] init];
+    id objc = [[self alloc] init];
     block(objc);
     
     if ([objc respondsToSelector:@selector(build)]) {

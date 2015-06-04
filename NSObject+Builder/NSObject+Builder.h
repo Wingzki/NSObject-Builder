@@ -16,7 +16,6 @@
 
 @interface NSObject (Builder)
 
-+ (instancetype)createWithClass:(Class)selfClass
-                        builder:(void(^)(NSObject *builder))block;
++ (instancetype)createWithBuilder:(void(^)(NSObject *builder))block;
 
 @end
