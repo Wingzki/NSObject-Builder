@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>845E9561-7CF2-45E2-96A0-1D2E8EEE0025</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZKINSObjectBuilder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>198558D24177BEB407373AEDAB20A70863B47224</key>
+		<string>https://github.com/Wingzki/NSObject-Builder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZKINSObjectBuilder.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>198558D24177BEB407373AEDAB20A70863B47224</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Wingzki/NSObject-Builder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>198558D24177BEB407373AEDAB20A70863B47224</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>198558D24177BEB407373AEDAB20A70863B47224</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZKINSObjectBuilder</string>
+		</dict>
+	</array>
+</dict>
+</plist>
