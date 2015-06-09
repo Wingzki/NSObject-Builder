@@ -7,9 +7,9 @@
 //
 
 #import "ZKITestView.h"
-#import "NSObject+Builder.h"
 
-@interface ZKITestView () <NSObjectBuilderProtocol>
+
+@interface ZKITestView ()
 
 @end
 
@@ -17,7 +17,15 @@
 
 - (instancetype)build {
     
+    NSAssert(self.foo, @"foo没有被舒适化");
+    
     return self;
+    
+}
+
+- (void)logFoo {
+    
+    NSLog(@"Foo is %@", self.foo);
     
 }
 

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSObject+Builder.h"
 
-@interface ZKITestView : UIView
+@interface ZKITestView : UIView <NSObjectBuilderProtocol>
+
+@property (strong, nonatomic) NSString *foo;
+
+- (void)logFoo;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZKITestView.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    ZKITestView *testView = [ZKITestView createWithBuilder:^(NSObject *builder) {
+        
+        ZKITestView *view = (ZKITestView *)builder;
+        
+        view.foo = @"foo";
+        
+    }];
+    
+    [testView logFoo];
     
     return YES;
 }
