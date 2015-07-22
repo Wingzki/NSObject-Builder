@@ -10,13 +10,14 @@
 
 @implementation NSObject (Builder)
 
-+ (instancetype)createWithBuilder:(void(^)(NSObject *builder))block {
++ (instancetype)createWithBuilder:(BuilderBlock)block {
     
     id objc = [[self alloc] init];
+
     block(objc);
     
     if ([objc respondsToSelector:@selector(build)]) {
-        [objc performSelector:@selector(build)];
+        return [objc performSelector:@selector(build)];
     }
     
     return objc;

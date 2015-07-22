@@ -10,12 +10,16 @@
 
 @protocol NSObjectBuilderProtocol <NSObject>
 
-- (void)build;
+@required
+
+- (instancetype)build;
 
 @end
 
+typedef void (^BuilderBlock)(id <NSObjectBuilderProtocol> builder);
+
 @interface NSObject (Builder)
 
-+ (instancetype)createWithBuilder:(void(^)(NSObject *builder))block;
++ (instancetype)createWithBuilder:(BuilderBlock)block;
 
 @end
