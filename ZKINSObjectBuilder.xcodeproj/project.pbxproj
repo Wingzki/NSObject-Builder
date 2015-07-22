@@ -13,6 +13,7 @@
 		C9811A1F1B202EEF00920B44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9811A1D1B202EEF00920B44 /* LaunchScreen.xib */; };
 		C9811A2B1B202EEF00920B44 /* ZKINSObjectBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9811A2A1B202EEF00920B44 /* ZKINSObjectBuilderTests.m */; };
 		C9811A371B20300E00920B44 /* NSObject+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = C9811A361B20300E00920B44 /* NSObject+Builder.m */; };
+		C9811A3D1B203B0100920B44 /* ZKITestView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9811A3C1B203B0100920B44 /* ZKITestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		C9811A2A1B202EEF00920B44 /* ZKINSObjectBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKINSObjectBuilderTests.m; sourceTree = "<group>"; };
 		C9811A351B20300E00920B44 /* NSObject+Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Builder.h"; sourceTree = "<group>"; };
 		C9811A361B20300E00920B44 /* NSObject+Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Builder.m"; sourceTree = "<group>"; };
+		C9811A3B1B203B0100920B44 /* ZKITestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKITestView.h; sourceTree = "<group>"; };
+		C9811A3C1B203B0100920B44 /* ZKITestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKITestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				C9811A1B1B202EEF00920B44 /* Images.xcassets */,
 				C9811A1D1B202EEF00920B44 /* LaunchScreen.xib */,
 				C9811A0B1B202EEF00920B44 /* Supporting Files */,
+				C9811A3B1B203B0100920B44 /* ZKITestView.h */,
+				C9811A3C1B203B0100920B44 /* ZKITestView.m */,
 			);
 			path = ZKINSObjectBuilder;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9811A371B20300E00920B44 /* NSObject+Builder.m in Sources */,
+				C9811A3D1B203B0100920B44 /* ZKITestView.m in Sources */,
 				C9811A111B202EEF00920B44 /* AppDelegate.m in Sources */,
 				C9811A0E1B202EEF00920B44 /* main.m in Sources */,
 			);
@@ -353,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
 				INFOPLIST_FILE = ZKINSObjectBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +419,7 @@
 				C9811A301B202EEF00920B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9811A311B202EEF00920B44 /* Build configuration list for PBXNativeTarget "ZKINSObjectBuilderTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +428,7 @@
 				C9811A331B202EEF00920B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
