@@ -22,6 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    self.window.rootViewController = [[UIViewController alloc] init];
+    
     ZKITestView *testView = [ZKITestView createWithBuilder:^(ZKITestView *builder) {
         
         builder.foo = @"foo";
